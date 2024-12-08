@@ -46,7 +46,9 @@ const Table = ({ data, requiredColumns, itemsPerPage, currentPage, onPageChange 
                   {requiredColumns.map((column) => {
                     return (
                       <td key={column.key}>
-                        {item[column.key]}
+                        <span className={styles.prefix}>{column.valuePrefix}</span>
+                        <span className={styles.value}>{item[column.key]}</span>
+                        <span className={styles.postfix}>{column.valuePostfix}</span>
                       </td>
                     );
                   })}
