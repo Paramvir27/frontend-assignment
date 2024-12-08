@@ -6,6 +6,6 @@ export const API_GET_PROJECTS = async () => {
     return jsonData
   } catch (error) {
     console.error('ERROR FETCHING DATA: ', error)
-    return []
+    return Promise.reject(new Error(error.message));
   }
 }

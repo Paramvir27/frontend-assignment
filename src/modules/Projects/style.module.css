@@ -1,3 +1,16 @@
 .parentWrapper {
   padding: 30px 5vw;
 }
+
+.errorBoundaryWrapper{
+  display: flex;
+  padding: 20px 5%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.errorBoundaryWrapper > div:first-child{
+  font-weight: 600;
+  font-size: 18px;
+}
+

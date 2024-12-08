@@ -14,6 +14,7 @@ const Projects = () => {
   const [projectList, setProjectList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
+  const [error, setError] = useState(null);
   const [itemsPerPage] = useState(5);
 
 
@@ -22,9 +23,14 @@ const Projects = () => {
   =========================================*/
 
   const fetchProjectList = async () => {
-    const response = await API_GET_PROJECTS();
-    setProjectList(response);
-    setIsLoading(false);
+    try {
+      const response = await API_GET_PROJECTS();
+      setProjectList(response);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -43,6 +49,16 @@ const Projects = () => {
       </div>
     )
   }
+
+  else if (error) {
+    return (
+      <div className={styles.errorBoundaryWrapper}>
+        <div>Something went wrong</div>
+        <div>Reason might be: {error}</div>
+      </div>
+    )
+  }
+
 
   return (
     <div className={styles.parentWrapper}>
