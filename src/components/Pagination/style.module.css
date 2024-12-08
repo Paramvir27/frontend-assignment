@@ -31,6 +31,7 @@
     .pagination {
         flex-wrap: wrap;
         justify-content: flex-start;
+        font-size: 12px;
     }
 
     .paginationSelect,
@@ -40,8 +41,10 @@
     }
 
     .pagination button {
+        font-size: 12px;
         padding: 8px 5%;
         flex-grow: 1;
+        order: 1
     }
 
 }

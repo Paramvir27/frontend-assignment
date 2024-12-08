@@ -28,6 +28,7 @@ const Pagination = ({
       </button>
 
       <Select
+        isSearchable={false}
         value={options.find(option => option.value === currentPage)}
         onChange={(option) => onPageChange(option.value)}
         options={options}
