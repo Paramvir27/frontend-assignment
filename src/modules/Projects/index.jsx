@@ -39,7 +39,7 @@ const Projects = () => {
   if (isLoading) {
     return (
       <div className={styles.parentWrapper}>
-        <TableLoader rowCount={itemsPerPage} columnHeadings={requiredColumns} />;
+        <TableLoader rowCount={itemsPerPage} columnHeadings={requiredColumns} />
       </div>
     )
   }

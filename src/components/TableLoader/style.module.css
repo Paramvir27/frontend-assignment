@@ -17,7 +17,7 @@
 
 .tableLoader th,
 .tableLoader td {
-    padding: 24px;
+    padding: 18px;
     text-align: left;
     border-bottom: 1px solid var(--border-color);
 }
@@ -44,5 +44,17 @@ th {
 
     100% {
         background-position: -200% 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .tableLoader th,
+    .tableLoader td {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .skeleton {
+        height: 18px;
     }
 }

@@ -19,7 +19,8 @@
 
 .tableWrapper th,
 .tableWrapper td {
-    padding: 24px;
+    padding: 20px;
+    font-size: 18px;
     text-align: left;
     border-bottom: 1px solid var(--border-color);
 }
@@ -42,6 +43,7 @@
 @media screen and (max-width: 420px) {
     .tableWrapper th,
     .tableWrapper td {
-        font-size: 12px;
+        font-size: 14px;
+        padding: 12px;
     }
 }

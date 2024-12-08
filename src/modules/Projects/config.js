@@ -14,7 +14,7 @@ export const requiredColumns = [
   {
     key: "amt.pledged",
     heading: "Amount Pledged",
-    valuePrefix: "₹",
+    valuePrefix: "₹ ",
     valuePostfix: null
   },
 ]

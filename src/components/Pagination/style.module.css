@@ -1,5 +1,5 @@
 .pagination {
-    --button-color: #ddd;
+    --border-color: #ddd;
     --button-hover-color: #f0f0f0;
 
     margin-top: 30px;
@@ -10,7 +10,7 @@
 
 .pagination button {
     padding: 16px 24px;
-    border: 1px solid var(--button-color);
+    border: 1px solid var(--border-color);
     font-size: 16px;
     background: white;
     border-radius: 4px;
@@ -21,6 +21,7 @@
 .paginationSelect,
 .paginationSelect>div {
     cursor: pointer;
+    border-color: var(--border-color)
 }
 
 .pagination button:hover {
@@ -32,17 +33,19 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         font-size: 12px;
+        gap: 16px;
     }
 
     .paginationSelect,
     .paginationSelect>div {
         flex-grow: 1;
         width: 100%;
+        height: 32px;
     }
 
     .pagination button {
         font-size: 12px;
-        padding: 8px 5%;
+        padding: 10px 5%;
         flex-grow: 1;
         order: 1
     }
