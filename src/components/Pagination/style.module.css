@@ -33,14 +33,13 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         font-size: 12px;
-        gap: 16px;
+        gap: 10px;
     }
 
     .paginationSelect,
     .paginationSelect>div {
         flex-grow: 1;
         width: 100%;
-        height: 32px;
     }
 
     .pagination button {

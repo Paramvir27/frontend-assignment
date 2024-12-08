@@ -19,7 +19,7 @@
 
 .tableWrapper th,
 .tableWrapper td {
-    padding: 20px;
+    padding: 18px;
     font-size: 18px;
     text-align: left;
     border-bottom: 1px solid var(--border-color);
@@ -27,7 +27,7 @@
 
 .tableWrapper th {
     background-color: var(--theme-color);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--header-font-color);
     text-transform: capitalize;
 }
