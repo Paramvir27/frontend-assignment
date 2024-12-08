@@ -1,0 +1,36 @@
+.tableWrapper {
+    --border-color: #eee;
+    --body-bcg-color: #fff;
+    --hover-bcg-color: #f5f5f5;
+    --header-font-color: #fff;
+    --body-font-color: #313131;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.tableWrapper table {
+    width: 100%;
+    background: var(--body-bcg-color);
+    color: var(--body-font-color);
+    border-collapse: collapse;
+}
+
+.tableWrapper th,
+.tableWrapper td {
+    padding: 24px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tableWrapper th {
+    background-color: var(--theme-color);
+    font-weight: 600;
+    color: var(--header-font-color);
+    text-transform: uppercase;
+}
+
+.tableWrapper tr:hover {
+    background-color: var(--hover-bcg-color);
+}
