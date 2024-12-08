@@ -19,7 +19,7 @@
 
 .tableWrapper th,
 .tableWrapper td {
-    padding: 14px;
+    padding: 12px;
     font-size: 16px;
     text-align: left;
     border-bottom: 1px solid var(--border-color);

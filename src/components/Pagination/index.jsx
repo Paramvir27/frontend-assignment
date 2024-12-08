@@ -33,6 +33,7 @@ const Pagination = ({
         onChange={(option) => onPageChange(option.value)}
         options={options}
         className={styles.paginationSelect}
+        classNamePrefix="react-select"
         styles={{
           control: (baseStyles) => ({
             ...baseStyles,
