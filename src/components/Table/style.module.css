@@ -6,7 +6,7 @@
     --body-font-color: #313131;
 
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     overflow: auto;
 }
 
@@ -19,8 +19,8 @@
 
 .tableWrapper th,
 .tableWrapper td {
-    padding: 18px;
-    font-size: 18px;
+    padding: 14px;
+    font-size: 16px;
     text-align: left;
     border-bottom: 1px solid var(--border-color);
 }
